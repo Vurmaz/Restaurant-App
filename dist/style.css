@@ -1,0 +1,340 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+:root{
+    --orange : #f77f00;
+    --red : #d62828;
+    --dark : rgba(0,0,0,0.3)
+}
+*{
+   font-family: 'Shadows Into Light', cursive;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0; 
+}
+#body {
+    line-height: 1.5;
+    min-height: 100vh;
+    background-image: url('./images/bg4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+h1{
+    color: white;
+}
+header{
+    color: var(--orange);
+    height: 10vh;
+    padding: 0.5rem;
+    text-align: center;
+}
+main{
+    width: 100%;
+    height: 100%;
+
+}
+nav{
+    height: 8vh;
+    display: flex;
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--dark);
+    border-radius: 5rem;
+    gap: 4rem;
+    box-shadow: 0px 0px 37px 0px rgba(0,0,0,0.75);
+}
+h3{
+    color: white;
+}
+.btns{
+    width: 7rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color:transparent;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.5rem;
+    position: relative;
+}
+.btns:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: -2px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: white;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.btns:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+.burger-div{
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.text{
+    font-size: 1.5em;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.text-div{
+    padding: 1rem;
+    background-color: var(--dark);
+    border-radius: 5rem;
+    width: 60%;
+    cursor: pointer;
+    box-shadow: 0px 0px 37px 0px rgba(0,0,0,0.75);
+    transition: background-color 500ms ease-in-out;
+    
+}
+.text-div:hover{
+     background-color: rgba(0, 0, 0, 0.7);
+}
+.intro-div{
+    width: 80%;
+    height: 45vh;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--dark);
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    border-radius: 5rem;
+    box-shadow: 0px 0px 37px 0px rgba(0,0,0,0.75);
+    transition: background-color 500ms ease-in-out;
+    cursor: pointer;
+}
+.intro-div:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.icon-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    cursor: pointer;
+}
+.icon-div:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: white;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.icon-div:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+.fase{
+    font-size: 5rem;
+    color: bisque;
+}
+.footer{
+    background-color: var(--dark);
+    width: 100%;
+    height: 5vh;
+}
+.quote{
+    color: white;
+    border-bottom: 1px solid white;
+    padding: 1rem;
+}
+.intros{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.menu-item{
+    width: 35rem;
+    height: 37rem;
+    background-color: var(--dark);
+    color: white;
+    padding: 1rem;
+    transition: background-color 500ms ease-in-out;
+    cursor: pointer;
+    border-radius: 5rem;
+    box-shadow: 0px 0px 37px 0px rgba(0,0,0,0.75);
+}
+.menu-item:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.menu-holder{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+.menu-item img{
+    width: 25rem;
+    height: 25rem;
+    border-radius: 5rem;
+}
+.menu-item h1{
+    padding: 1rem;
+}
+.menu-item p {
+    padding: 1rem;
+}
+.menu-item h4{
+    padding: 1rem;
+}
+.active {    
+    border-bottom: 2px solid white;
+}
+.map-holder {
+  height: 30rem;
+  width: 95%;
+  border-radius: 3rem;
+}
+.big-map{
+    margin-left: 10%;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--dark);
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 5rem;
+    transition: background-color 500ms ease-in-out;
+    box-shadow: 0px 0px 37px 0px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+.big-map:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.menu-name{
+    width: 60%;
+    height: 13vh;
+    margin-left: 20%;
+    background: var(--dark);
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    box-shadow: 0px 0px 37px 0px rgba(0,0,0,0.75);
+}
+.c-us{
+    font-size: 2.5rem;
+}   
+@media screen and (min-width:376px) and (max-width:570px) {
+    nav{
+        gap: 2rem;
+    }
+    .menu-item{
+        width: 25rem;
+        height: 31rem;
+        border-radius: 3rem;
+    }
+    .menu-item img{
+        width: 20rem;
+        height: 20rem;
+        border-radius: 3rem;
+    }
+    .intros{
+        flex-direction: column;
+        gap:0.5rem;
+    }
+    .text{
+        font-size: 1rem;
+    }
+    .intro-div{
+        height: 70vh;
+    }
+    .text-div{
+        width: 80%;
+    }
+}
+@media screen and (max-width:375px){
+    nav{
+        gap: 2rem;
+        width: 90%;
+        margin-left: 5%;
+        border-radius: 1rem;
+
+    }
+    .btns{
+        width: max-content;
+    }
+    .menu-item{
+        width: 18rem;
+        height: 26rem;
+        border-radius: 3rem;
+    }
+    .menu-item img{
+        width: 14rem;
+        height: 14rem;
+        border-radius: 3rem;
+    }
+    .intros{
+        flex-direction: column;
+        gap:0.5rem;
+    }
+    .text{
+        font-size: 1rem;
+    }
+    .intro-div{
+        height: 70vh;
+    }
+    .text-div{
+        width: 80%;
+    }
+    .quote{
+        width: max-content;
+    }
+    .intro-div{
+        border-radius: 3rem;
+    }
+    .text-div{
+        border-radius: 3rem;
+    }
+    .big-map{
+        border-radius: 3rem;
+    }
+}
+
