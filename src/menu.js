@@ -17,19 +17,21 @@ let array = []
 function createMenu() {
 	const menuHolder = document.createElement('div')
 	menuHolder.classList.add('menu-holder')
-
-	array.forEach((item)=>{
-	const menuItem = document.createElement('div')
-	menuItem.classList.add('menu-item')
-	menuHolder.appendChild(menuItem)
-	menuItem.appendChild(nameMaker(item.name))
-	menuItem.appendChild(menuImg(item.photo))
-	menuItem.appendChild(descMaker(item.desc))
-	menuItem.appendChild(priceMaker(item.price))
-	})
+	renderMenu(menuHolder)
 	return menuHolder
 }
-function createMenuName(){
+function renderMenu(holder) {
+	array.forEach((item) => {
+		const menuItem = document.createElement('div')
+		menuItem.classList.add('menu-item')
+		menuItem.appendChild(createName(item.name))
+		menuItem.appendChild(menuImg(item.photo))
+		menuItem.appendChild(createDescription(item.desc))
+		menuItem.appendChild(createPrice(item.price))
+		holder.appendChild(menuItem)
+	})
+}
+function createMenuName() {
 	const menuName = document.createElement('div')
 	menuName.classList.add('menu-name')
 	const textName= document.createElement('h1')
@@ -37,17 +39,17 @@ function createMenuName(){
 	menuName.appendChild(textName)
 	return menuName
 }
-function nameMaker(name) {
+function createName(name) {
 	const burgerName = document.createElement('h2')
 	burgerName.textContent = name
 	return burgerName
 }
-function priceMaker(price) {
-	const priceItem = document.createElement('h4')
+function createPrice(price) {
+	const priceItem = document.createElement('h3')
 	priceItem.textContent = price
 	return priceItem
 }
-function descMaker(desc) {
+function createDescription(desc) {
 	const descItem = document.createElement('p')
 	descItem.textContent = desc
 	return descItem

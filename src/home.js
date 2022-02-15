@@ -11,7 +11,7 @@ function createHome() {
 	return burgerDiv
 }
 
-function createText(para) {
+export function createText(para) {
 	const text = document.createElement('p')
 	text.classList.add('text')
 	text.textContent = para

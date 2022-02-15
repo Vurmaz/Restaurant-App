@@ -1,2 +1,2 @@
-import initWeb from "./website.js";
+import initWeb from "./website";
 initWeb();
