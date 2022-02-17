@@ -34,12 +34,15 @@ function createFooter() {
   const footer = document.createElement('footer')
   footer.classList.add('footer')
   const icon = document.createElement('span')
+  const a = document.createElement('a')
+  a.href = 'https://github.com/Vurmaz'
 	icon.classList.add('fab')
 	icon.classList.add('fa-github')
   const text = document.createElement('h4')
   text.innerText = 'Created By Vurmaz'
   footer.appendChild(text)
-  footer.appendChild(icon)
+  footer.appendChild(a)
+  a.appendChild(icon)
   return footer
 }
 function createBtn(name,iconName) {
