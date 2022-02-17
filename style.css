@@ -183,9 +183,14 @@ h3 {
 .footer h4 {
   color: white;
 }
+
 .footer span {
   font-size: 2rem;
   color: white;
+  transition: color 300ms ease-in-out;
+}
+.footer span:hover {
+  color: bisque;
 }
 .quote {
   color: white;
