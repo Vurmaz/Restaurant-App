@@ -2,6 +2,7 @@ import loadHome from './home'
 import loadMenu from './menu'
 import loadContact from './contact'
 
+
 function createHeader(){
   const header = document.createElement('header')
   const text = document.createElement('h1')
@@ -32,6 +33,13 @@ function createMain() {
 function createFooter() {
   const footer = document.createElement('footer')
   footer.classList.add('footer')
+  const icon = document.createElement('span')
+	icon.classList.add('fab')
+	icon.classList.add('fa-github')
+  const text = document.createElement('h4')
+  text.innerText = 'Created By Vurmaz'
+  footer.appendChild(text)
+  footer.appendChild(icon)
   return footer
 }
 function createBtn(name,iconName) {
