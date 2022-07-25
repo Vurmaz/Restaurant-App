@@ -1,6 +1,6 @@
 # Restaurant-App
 
-Restaurant Webpage 
+This is a Restaurant Webpage
 
 # Build With
 
